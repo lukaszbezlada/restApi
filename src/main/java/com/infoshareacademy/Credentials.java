@@ -1,15 +1,15 @@
 package com.infoshareacademy;
 
 public class Credentials {
-    private User user;
+    private String user;
     private String password;
 
-    public Credentials(User user, String password) {
+    public Credentials(String user, String password) {
         this.user = user;
         this.password = password;
     }
 
-    public User getUser() {
+    public String getUser() {
         return user;
     }
 
@@ -17,7 +17,7 @@ public class Credentials {
         return password;
     }
 
-    public void setUser(User user) {
+    public void setUser(String user) {
         this.user = user;
     }
 
