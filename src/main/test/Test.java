@@ -43,7 +43,6 @@ public class Test {
 
         WebTarget target = getWebTarget("http://localhost:81/rest/user?id=2");
 
-        User user = new User();
         Response response = target.request().delete();
     }
 
