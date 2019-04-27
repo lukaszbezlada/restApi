@@ -33,9 +33,9 @@ public class UserService {
     }
 
     @GET
-    @Path("/hello/{name}")
+    @Path("/hello/{nn}")
     @Produces(MediaType.TEXT_PLAIN)
-    public Response sayHello(@PathParam("name") String name) {
+    public Response sayHello(@PathParam("nn") String name) {
 
         return Response.ok("Saying hello to " + name + "!").build();
     }
@@ -108,7 +108,7 @@ public class UserService {
     }
 
     @POST
-    @Path("/user")
+    @Path("/adduser")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response addUser(User user) {
@@ -138,7 +138,7 @@ public class UserService {
     }
 
     @DELETE
-    @Path("/user")
+    @Path("/deleteuser")
     @Produces(MediaType.APPLICATION_JSON)
     public Response deleteUser(@QueryParam("id") Integer id) {
 

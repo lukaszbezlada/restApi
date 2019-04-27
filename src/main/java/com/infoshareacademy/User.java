@@ -1,16 +1,40 @@
 package com.infoshareacademy;
 
 public class User {
+
     private String name;
+
     private String surname;
-    private Integer id;
+
+    private int id;
+
     private Credentials credentials;
 
-    public User(String name, String surname, Integer id, Credentials credentials) {
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setCredentials(Credentials credentials) {
+        this.credentials = credentials;
+    }
+
+    public User(String name, String surname, int id, Credentials credentials) {
         this.name = name;
         this.surname = surname;
         this.id = id;
         this.credentials = credentials;
+    }
+
+    public User() {
+
     }
 
     public String getName() {
@@ -21,7 +45,7 @@ public class User {
         return surname;
     }
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
@@ -29,19 +53,8 @@ public class User {
         return credentials;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public void setCredentials(Credentials credentials) {
-        this.credentials = credentials;
+    @Override
+    public String toString() {
+        return name + " " + surname;
     }
 }
