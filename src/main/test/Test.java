@@ -37,4 +37,22 @@ public class Test {
         user.setSurname("ISA 456 - update");
         Response response = target.request().put(Entity.entity(user, MediaType.APPLICATION_JSON));
     }
+
+    @org.junit.Test
+    public void deleteUserTest() {
+        Client client = ClientBuilder.newClient();
+        WebTarget target = client.target("http://localhost:81/rest/user?id=1");
+
+        User user = new User();
+        Response response = target.request().delete();
+    }
+
+// method to refactor
+//    private WebTarget getWebTarget (String uri) {
+//        Client client = ClientBuilder.newClient();
+//        WebTarget target = client.target(uri);
+//        return client.target(uri);
+//    }
 }
+
+
