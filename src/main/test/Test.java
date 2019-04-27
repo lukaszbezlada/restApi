@@ -25,4 +25,16 @@ public class Test {
 
         response.getEntity();
     }
+
+    @org.junit.Test
+    public void editUserTest() {
+        Client client = ClientBuilder.newClient();
+        WebTarget target = client.target("http://localhost:81/rest/user");
+
+        User user = new User();
+        user.setId(3);
+        user.setName("ISA 123 - update");
+        user.setSurname("ISA 456 - update");
+        Response response = target.request().put(Entity.entity(user, MediaType.APPLICATION_JSON));
+    }
 }
