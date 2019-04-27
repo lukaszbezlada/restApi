@@ -31,13 +31,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="19" />
-          <entry key="java" value="700" />
+          <entry key="java" value="719" />
           <entry key="xml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="700" />
+          <entry key="JAVA" value="719" />
           <entry key="PLAIN_TEXT" value="19" />
           <entry key="XML" value="9" />
         </counts>
@@ -129,8 +129,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/test/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+            <state relative-caret-position="430">
+              <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,8 +153,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/infoshareacademy/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="111" column="3" selection-start-line="111" selection-start-column="3" selection-end-line="113" selection-end-column="40" />
+            <state relative-caret-position="460">
+              <caret line="147" column="9" lean-forward="true" selection-start-line="147" selection-start-column="9" selection-end-line="147" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,8 +165,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/test/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            <state relative-caret-position="136">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -343,7 +343,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556388061943" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556388623027" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -369,7 +369,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Test.testAddUsersByProxy">
+  <component name="RunManager" selected="JUnit.Test.deleteUsersByProxy">
     <configuration name="JBoss" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 15.0.1.Final1" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
@@ -442,16 +442,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test.addUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="restapi" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <option name="METHOD_NAME" value="addUserTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test.deleteUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="restapi" />
       <option name="PACKAGE_NAME" value="" />
@@ -462,11 +452,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test.editUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test.deleteUsersByProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="restapi" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Test" />
-      <option name="METHOD_NAME" value="editUserTest" />
+      <option name="METHOD_NAME" value="deleteUsersByProxy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.deleterUsersByProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restapi" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <option name="METHOD_NAME" value="deleterUsersByProxy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -494,19 +494,19 @@
     </configuration>
     <list>
       <item itemvalue="JBoss Server.JBoss" />
-      <item itemvalue="JUnit.Test.addUserTest" />
-      <item itemvalue="JUnit.Test.editUserTest" />
       <item itemvalue="JUnit.Test.deleteUserTest" />
       <item itemvalue="JUnit.Test.testGetUsersByProxy" />
       <item itemvalue="JUnit.Test.testAddUsersByProxy" />
+      <item itemvalue="JUnit.Test.deleterUsersByProxy" />
+      <item itemvalue="JUnit.Test.deleteUsersByProxy" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Test.deleteUsersByProxy" />
+        <item itemvalue="JUnit.Test.deleterUsersByProxy" />
         <item itemvalue="JUnit.Test.testAddUsersByProxy" />
         <item itemvalue="JUnit.Test.testGetUsersByProxy" />
         <item itemvalue="JUnit.Test.deleteUserTest" />
-        <item itemvalue="JUnit.Test.editUserTest" />
-        <item itemvalue="JUnit.Test.addUserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -523,7 +523,7 @@
       <workItem from="1555256658594" duration="11061000" />
       <workItem from="1556370161346" duration="1848000" />
       <workItem from="1556378099062" duration="177000" />
-      <workItem from="1556381067098" duration="5804000" />
+      <workItem from="1556381067098" duration="6359000" />
     </task>
     <servers />
   </component>
@@ -549,9 +549,18 @@
     <history-entry file="Test_testGetUsersByProxy - 2019.04.27 at 19h 43m 58s.xml">
       <configuration name="Test.testGetUsersByProxy" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Test_testAddUsersByProxy - 2019.04.27 at 20h 00m 07s.xml">
+      <configuration name="Test.testAddUsersByProxy" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_deleterUsersByProxy - 2019.04.27 at 20h 07m 52s.xml">
+      <configuration name="Test.deleterUsersByProxy" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_deleterUsersByProxy - 2019.04.27 at 20h 08m 40s.xml">
+      <configuration name="Test.deleterUsersByProxy" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18890000" />
+    <option name="totallyTimeSpent" value="19445000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="25" width="1863" height="1055" extended-state="6" />
@@ -567,13 +576,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49972484" weight="0.24432433" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49972484" visible="true" weight="0.24432433" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32901832" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49972484" visible="true" weight="0.24972972" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49972484" weight="0.24972972" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5002752" side_tool="true" weight="0.32901832" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32901832" />
       <window_info anchor="bottom" id="SonarLint" order="11" />
@@ -695,20 +704,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/infoshareacademy/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/test/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="111" column="3" selection-start-line="111" selection-start-column="3" selection-end-line="113" selection-end-column="40" />
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/infoshareacademy/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        <state relative-caret-position="460">
+          <caret line="147" column="9" lean-forward="true" selection-start-line="147" selection-start-column="9" selection-end-line="147" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -717,8 +726,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+        <state relative-caret-position="430">
+          <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

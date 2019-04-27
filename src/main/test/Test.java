@@ -71,7 +71,7 @@ public class Test {
     }
 
     @org.junit.Test
-    public void testAddUsersByProxy(){
+    public void testAddUsersByProxy() {
 
         ResteasyClient client = new ResteasyClientBuilder().build();
         ResteasyWebTarget target = client.target(UriBuilder.fromPath("http://localhost:81/rest/"));
@@ -79,8 +79,20 @@ public class Test {
         UserService proxy = target.proxy(UserService.class);
 
         proxy.addUser(new User());
+    }
+
+    @org.junit.Test
+    public void deleteUsersByProxy(){
+
+        ResteasyClient client = new ResteasyClientBuilder().build();
+        ResteasyWebTarget target = client.target(UriBuilder.fromPath("http://localhost:81/rest/"));
+
+        UserService proxy = target.proxy(UserService.class);
+
+        proxy.deleteUser(4);
 
     }
 }
+
 
 
